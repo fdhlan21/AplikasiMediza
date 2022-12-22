@@ -1,7 +1,7 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import colors from '../../utils/colors/colors';
@@ -9,6 +9,8 @@ import colors from '../../utils/colors/colors';
 function HalamanScanPencacahan({navigation}) {
   return (
     <View style={{ flex: 1, backgroundColor:colors.primary }}>
+
+<ScrollView>
 
 <View   style={{padding:10, backgroundColor:colors.secondary, borderBottomRightRadius:10, borderBottomLeftRadius:10,}}>
 
@@ -39,9 +41,11 @@ function HalamanScanPencacahan({navigation}) {
     <Text  style={{color:colors.white, fontFamily:'Alata-Regular', textAlign:'center', fontSize:20}} >Hasil Scan</Text>
     </TouchableOpacity>
 </View>
+</ScrollView>
 
 
-<View style={{padding:2, backgroundColor:colors.primary, marginTop:150}} ></View>
+
+<View style={{padding:2, backgroundColor:colors.primary,}} ></View>
 
 <View style={{padding:1, backgroundColor:colors.secondary, flexDirection:'row', justifyContent:'space-around'}}>
 

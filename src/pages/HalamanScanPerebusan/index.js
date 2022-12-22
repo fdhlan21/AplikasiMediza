@@ -1,15 +1,17 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import colors from '../../utils/colors/colors';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 function HalamanScanPerebusan({navigation}) {
   return (
     <View style={{ flex: 1, backgroundColor:colors.primary }}>
 
+<ScrollView>
 <View   style={{padding:10, backgroundColor:colors.secondary, borderBottomRightRadius:10, borderBottomLeftRadius:10,}}>
 
 <View>
@@ -40,9 +42,10 @@ function HalamanScanPerebusan({navigation}) {
     </TouchableOpacity>
 </View>
 
+</ScrollView>
 
 
-<View style={{padding:2, backgroundColor:colors.primary, marginTop:150}} ></View>
+<View style={{padding:2, backgroundColor:colors.primary, }} ></View>
 
 <View style={{padding:1, backgroundColor:colors.secondary, flexDirection:'row', justifyContent:'space-around'}}>
 

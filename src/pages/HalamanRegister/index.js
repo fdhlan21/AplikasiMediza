@@ -70,7 +70,7 @@ function HalamanRegister({navigation}) {
 
 
 <View style={{ padding:10, }} >
-<TouchableOpacity  style={{padding:10, backgroundColor:colors.tertiary, borderRadius:10, }} >
+<TouchableOpacity  onPress={()=>navigation.navigate('HalamanLogin')}  style={{padding:10, backgroundColor:colors.tertiary, borderRadius:10, }} >
     <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, textAlign:'center' }}>Register</Text>
 </TouchableOpacity>
 </View>

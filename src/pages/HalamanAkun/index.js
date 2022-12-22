@@ -18,10 +18,12 @@ function HalamanAkun({navigation}) {
   return (
     <View style={{ flex: 1, backgroundColor:colors.primary }}>
 
-<Modal isVisible={modal}>
-        <View style={{ backgroundColor:colors.white, borderRadius:20, padding:10,}}>
-        <TouchableOpacity  style={{ bottom:0, left:280}}   onPress={() => setModal(false)}   ><Image   style={{width:15, height:15,}} source={require('../../assets/img/x.png')} /></TouchableOpacity>
-        <View style={{padding:10, alignItems:'center'}}>
+<Modal style={{alignItems:'center'}} isVisible={modal}>
+        <View style={{ backgroundColor:colors.white, borderRadius:20, padding:10, width:350, height:200,  }}>
+        <View style={{flexDirection:'row', padding:10, justifyContent:'flex-end'}}>
+        <TouchableOpacity  style={{ bottom:0,}}   onPress={() => setModal(false)}   ><Image   style={{width:15, height:15,}} source={require('../../assets/img/x.png')} /></TouchableOpacity>
+        </View>
+        <View style={{padding:10, alignItems:'center', bottom:28}}>
         <Image    style={{width:128, height:128,  }} source={require('../../assets/img/ceklis.png')} />
           <Text  style={{color:colors.tertiary, fontFamily:'Alata-Regular', fontSize:25, textAlign:'center'}}  >Berhasil Disimpan!</Text>
           </View>

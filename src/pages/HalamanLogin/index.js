@@ -12,11 +12,6 @@ function HalamanLogin({navigation}) {
     <View style={{ flex: 1, backgroundColor:colors.primary,  }}>
 
 
-
-
-
-
-<SafeAreaView>
 <ScrollView>
 <View  style={{padding:10, marginTop:100  }}>
     <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:35, textAlign:'center'}} >Login</Text>
@@ -51,20 +46,20 @@ function HalamanLogin({navigation}) {
     <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:10, textAlign:'center' }}  >Register</Text>
 </TouchableOpacity>
 </View>
+</ScrollView>
 
 
 
 
 
-
-<View  style={{  padding:10, marginTop:80 }}>
+<View  style={{  padding:10,  }}>
    <Text   style={{color:colors.white, fontSize:15, fontFamily:'Alata-Regular', textAlign:'center'}}>CV. Madizatex</Text>
    <Text style={{color:colors.white, fontSize:12, fontFamily:'Alata-Regular', textAlign:'center'}}>Pekalongan, Jawa Tengah, Indonesia</Text>
 </View>
 
 
-</ScrollView>
-</SafeAreaView>
+
+
     </View>
   );
 }
