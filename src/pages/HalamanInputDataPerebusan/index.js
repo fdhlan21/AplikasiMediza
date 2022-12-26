@@ -75,7 +75,7 @@ function HalamanInputDataPerebusan({navigation}) {
 
 
 
-<View style={{padding:2, backgroundColor:colors.primary,}} ></View>
+<View style={{padding:1, backgroundColor:colors.tertiary,}} ></View>
 
 <View style={{padding:1, backgroundColor:colors.secondary, flexDirection:'row', justifyContent:'space-around'}}>
 

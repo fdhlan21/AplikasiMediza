@@ -84,7 +84,7 @@ function HalamanAkun({navigation}) {
 </ScrollView>
 
 
-<View style={{padding:2, backgroundColor:colors.primary,  marginTop:0}} ></View>
+<View style={{padding:1, backgroundColor:colors.tertiary,  marginTop:0}} ></View>
 
 <View style={{padding:1, backgroundColor:colors.secondary, flexDirection:'row', justifyContent:'space-around'}}>
 

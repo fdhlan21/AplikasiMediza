@@ -45,14 +45,14 @@ function HalamanHome({navigation}) {
 <View  style={{ flexDirection:'row', padding:10, bottom:100,  justifyContent:'space-around' }}>
 
 <View  style={{ padding:10,  }}>
-    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanScanPerebusan')}  style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10 }}>
+    <TouchableOpacity   onPress={()=>navigation.navigate('HalamanScanPerebusan')}  style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10, borderWidth:1, borderColor:colors.tertiary  }}>
         <Image style={{width:80, height:77, left:25, top:30}} source={require('../../assets/img/perebusan.png')}  />
     </TouchableOpacity>
 </View>
 
 
 <View  style={{  padding:10, marginLeft:20  }}>
-    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanScanPenjemuran')}  style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10 }}>
+    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanScanPenjemuran')}  style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10, borderWidth:1, borderColor:colors.tertiary  }}>
         <Image style={{width:77, height:87, left:30, top:25}} source={require('../../assets/img/penjemuran.png')}  />
     </TouchableOpacity>
 </View>
@@ -63,27 +63,27 @@ function HalamanHome({navigation}) {
 
 
 <View style={{flexDirection:'row' , bottom:120, justifyContent:'space-around' }} >
-<View style={{padding:10, }} >
+<View style={{padding:0, }} >
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, }} >Perebusan</Text>
 </View>
-<View style={{padding:10, }} >
+<View style={{padding:0, }} >
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, }} >Penjemuran</Text>
 </View>
 </View>
 
 
 
-<View  style={{flexDirection:'row', padding:10, bottom:120, justifyContent:'space-around'}}>
+<View  style={{flexDirection:'row', padding:10, bottom:120, justifyContent:'space-around',}}>
 
 <View  style={{  padding:10  }}>
-    <TouchableOpacity onPress={()=>navigation.navigate('HalamanScanPencacahan')}  style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10 }}>
+    <TouchableOpacity onPress={()=>navigation.navigate('HalamanScanPencacahan')}  style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10, borderWidth:1, borderColor:colors.tertiary }}>
         <Image style={{width:73, height:77, left:25, top:30}} source={require('../../assets/img/pencacahan.png')}  />
     </TouchableOpacity>
 </View>
 
 
 <View  style={{padding:10,  marginLeft:20}}>
-    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanScanDistribusi')} style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10 }}>
+    <TouchableOpacity  onPress={()=>navigation.navigate('HalamanScanDistribusi')} style={{backgroundColor:colors.touch, width:138, height:138, borderRadius:10,borderWidth:1, borderColor:colors.tertiary  }}>
         <Image style={{width:77, height:77, left:30, top:25}} source={require('../../assets/img/distribusi.png')}  />
     </TouchableOpacity>
 </View>
@@ -91,17 +91,17 @@ function HalamanHome({navigation}) {
 
 
 <View style={{flexDirection:'row' ,  bottom:140,   justifyContent:'space-around'}} >
-<View style={{padding:10, }} >
+<View style={{padding:0, }} >
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15,}} >Pencacahan</Text>
 </View>
-<View style={{padding:10, }} >
+<View style={{padding:0, }} >
 <Text style={{color:colors.white, fontFamily:'Alata-Regular', fontSize:15, }} >Distribusi</Text>
 </View>
 </View>
 </ScrollView>
 
 
-<View style={{padding:2, backgroundColor:colors.primary}} ></View>
+<View style={{padding:1, backgroundColor:colors.tertiary}} ></View>
 
 <View style={{padding:1, backgroundColor:colors.secondary, flexDirection:'row', justifyContent:'space-around'}}>
 
